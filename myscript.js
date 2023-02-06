@@ -1,5 +1,5 @@
 // data termnine
-let data = new Date("Feb 6, 2023 09:30:00").getTime();
+let data = new Date("Feb 6, 2023 09:50:00").getTime();
 
 //funzione conta ogni secondo
 let x = setInterval(function () {
@@ -19,7 +19,7 @@ let x = setInterval(function () {
   document.getElementById("countdown").innerHTML =
     giorni + "d " + ore + "h " + minuti + "m " + secondi + "s ";
 
-  // If the count down is finished, write some text
+  // quando termina scrivi nell'html
   if (distance < 0) {
     clearInterval(x);
     document.getElementById("countdown").innerHTML = "TERMINATO!";
